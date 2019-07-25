@@ -1,6 +1,5 @@
-class TestAutomation {
+String userName = System.getProperty("user.name")
 
-    static void main(String[] args) {
+String bashScript = "/home/" + userName + "/PycharmProjects/Datas_V2/src/scrapers_v2/run_tests.sh"
 
-    }
-}
+bashScript.execute()
