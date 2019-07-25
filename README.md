@@ -1,1 +1,1 @@
-# JenkinsTestAutomation
+# JenkinsBashAutomation
