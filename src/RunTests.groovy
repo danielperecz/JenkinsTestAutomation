@@ -1,7 +1,6 @@
 import groovy.io.FileType
 
-String userName = System.getProperty("user.name")
-String scrapersPath = "/home/" + userName + "/PycharmProjects/Datas_V2/src/scrapers_v2/scrapers"
+String scrapersPath = "/var/lib/jenkins/workspace/wq/src/scrapers_v2/scrapers"
 int scrapersPathLength = scrapersPath.length()+1
 
 def allFiles = []
@@ -24,8 +23,7 @@ allFiles.each {
             String file = it
             // If file is a python test file, run it
             if (file.toLowerCase().contains("test") & file.toLowerCase().contains(".py")) {
-                //file.execute()
-                println file
+                file.execute()
             }
         }
     }
